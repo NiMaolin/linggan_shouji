@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">lingganshouji</string>
+    <string name="title_activity_main">lingganshouji</string>
+    <string name="package_name">com.example.lingganshouji</string>
+    <string name="custom_url_scheme">com.example.lingganshouji</string>
+</resources>
