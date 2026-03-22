@@ -4,6 +4,7 @@ import express from 'express'
 import { createPool } from './db'
 import { healthRouter } from './routes/health'
 import { createNotesRouter } from './routes/notes'
+import { createLingganRouter } from './routes/linggan'
 
 dotenv.config()
 
@@ -21,6 +22,7 @@ app.use(
 
 app.use('/api', healthRouter)
 app.use('/api', createNotesRouter(createPool()))
+app.use('/api', createLingganRouter(createPool()))
 
 app.use((_req, res) => {
   res.status(404).json({ code: 404, data: null, message: 'not found' })

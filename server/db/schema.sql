@@ -18,3 +18,11 @@ CREATE TABLE IF NOT EXISTS notes (
   KEY idx_notes_created_at (created_at)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE IF NOT EXISTS T_linggan (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  content TEXT NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id),
+  KEY idx_linggan_created_at (created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
